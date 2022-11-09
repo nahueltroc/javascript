@@ -19,4 +19,24 @@ switch (personaje){
 
 alert("personalizemos tu personaje, eleji la altura, ataque, peso y defensa")
 
-let personalizacion = promptInt(prompt("elija pues" + new Personalizacion())) 
+per = prompt("elija que quiere personalizar \n presione 1 altura, \n presione 2 ataque \n presione 3 defensa \n presione 4 peso ")
+
+let info;
+
+while(0 != 4){
+    switch (per){
+        case 1:
+            let altura = parseInt(prompt("ingrese la altura"));
+           info = new Personalizacion(altura, ataque, defensa, peso );
+            break;
+        case 2:
+            let ataque = parseInt(prompt("ingrese el ataque"));
+            break;
+        case 3:
+            let defensa = parseInt(prompt("ingrese la defensa"));
+            break;
+        case 4:
+            let peso = parseInt(prompt("ingrese el peso"));
+            break;
+    }
+}
